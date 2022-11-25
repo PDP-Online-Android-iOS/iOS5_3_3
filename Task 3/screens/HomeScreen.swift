@@ -16,7 +16,7 @@ struct HomeScreen: View {
     @State var sms = ""
     @State var address1 = ""
     @State var address2 = ""
-    @State var postal = ""
+    @State var zipcode = ""
     
     var body: some View {
         ScrollView {
@@ -63,8 +63,8 @@ struct HomeScreen: View {
             }.padding(.bottom, 10)
             
             VStack(alignment: .leading, spacing: 15) {
-                Text("Postal")
-                TextField("Postal", text: $postal)
+                Text("Zipcode")
+                TextField("Zipcode", text: $zipcode)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }.padding(.bottom, 10)
             
